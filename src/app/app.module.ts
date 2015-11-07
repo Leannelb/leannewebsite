@@ -11,12 +11,15 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { BlogModule } from './components/blog/blog.module';
+import { NavComponent } from './nav/nav.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CodeSnippitsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
