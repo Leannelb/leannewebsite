@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["RTLlf"]); }
+
+__d("FantaMercuryTabOverflowTitle.react",["CurrentUser","MercuryThreadInfo","MercuryThreadTitle.react","React"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g;g=babelHelpers.inherits(a,b("React").Component);g&&g.prototype;a.prototype.render=function(){var a=this.props.thread;return!a?null:b("React").createElement(b("MercuryThreadTitle.react"),{isNewThread:b("MercuryThreadInfo").isNewEmptyLocalThread(a),showUnreadCount:!0,thread:a,useAndSeparator:!0,useShortName:!a.is_canonical,viewer:b("CurrentUser").getID()})};function a(){g.apply(this,arguments)}e.exports=a}),null);
