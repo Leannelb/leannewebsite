@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { Routes } from '@angular/router';
+import { CodeSnippitsComponent } from './components/code-snippits/code-snippits.component';
 
 const appRoutes: Routes = [
   { 
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     NavComponent,
     HomeComponent,
     ResumeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    CodeSnippitsComponent
   ],
   imports: [
     BrowserModule,
