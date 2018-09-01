@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["Aq6rX"]); }
+
+__d("UFIAddCommentLiveTypingController",["AbstractCommentLiveTypingXHRController","Bootloader"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g;c=babelHelpers.inherits(a,b("AbstractCommentLiveTypingXHRController"));g=c&&c.prototype;function a(a,b,c){g.constructor.call(this,a,b,c)}a.prototype.bootloadPublisherModule=function(a){b("Bootloader").loadModules(["UFIAddCommentLiveTypingPublisher"],a,"UFIAddCommentLiveTypingController")};a.prototype.attemptPublishStartEvent=function(){g.attemptPublishStartEvent.call(this)};a.prototype.attemptPublishStopEvent=function(){g.attemptPublishStopEvent.call(this)};e.exports=a}),null);

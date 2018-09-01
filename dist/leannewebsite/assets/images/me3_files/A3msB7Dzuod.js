@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["w9IRk"]); }
+
+__d("ReactComposerBackdateSproutContainer.react",["ExtensibleSproutsItemType","React","ReactComposerSproutsDefaultUIConfig","ReactComposerTaggerSproutContainer.react","ReactComposerTaggerType"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g;g=babelHelpers.inherits(a,b("React").PureComponent);g&&g.prototype;a.prototype.render=function(){return b("React").createElement(b("ReactComposerTaggerSproutContainer.react"),{uiConfig:this.props.uiConfig,taggerID:b("ReactComposerTaggerType").BACKDATE})};function a(){g.apply(this,arguments)}a.defaultProps={uiConfig:b("ReactComposerSproutsDefaultUIConfig")[b("ExtensibleSproutsItemType").BACKDATE]};e.exports=a}),null);

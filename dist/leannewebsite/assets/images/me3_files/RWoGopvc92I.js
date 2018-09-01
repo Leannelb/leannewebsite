@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["vCxI9"]); }
+
+__d("AdsDataAtomDebugger",["URI"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g={shouldLog:!!new(b("URI"))(window.location.href).getQueryData().dispatcherevents,toggleLogging:function(){g.shouldLog=!g.shouldLog},isLogging:function(){return g.shouldLog},attach:function(a){__p&&__p();a.register(function(a){__p&&__p();a=a.action;if(a){console.timeStamp&&console.timeStamp(a.type);if(g.shouldLog){var b=a.type,c=a.actionType;a=babelHelpers.objectWithoutProperties(a,["type","actionType"]);console.groupCollapsed(b||c,a);console.trace();console.groupEnd()}}})}};e.exports=g}),null);
