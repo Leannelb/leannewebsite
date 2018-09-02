@@ -1,0 +1,12 @@
+#code h1 {
+    font: 15px/24px 'opensans-semibold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #fff;
+ }
+ #code{
+     padding:10%;
+     background-color: rgba(230, 70, 100, .7);
+ }

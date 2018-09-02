@@ -10,6 +10,9 @@ import { Routes } from '@angular/router';
 import { CodeSnippitsComponent } from './components/code-snippits/code-snippits.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AngularFontAwesomeModule } from '../';
+
 
 const appRoutes: Routes = [
   { 
@@ -32,11 +35,13 @@ const appRoutes: Routes = [
     ResumeComponent,
     PortfolioComponent,
     CodeSnippitsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
