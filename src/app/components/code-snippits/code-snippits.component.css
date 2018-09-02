@@ -10,3 +10,9 @@
      padding:10%;
      background-color: rgba(230, 70, 100, .7);
  }
+
+.small-squares {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }

@@ -11,7 +11,7 @@ import { CodeSnippitsComponent } from './components/code-snippits/code-snippits.
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AngularFontAwesomeModule } from '../';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 const appRoutes: Routes = [

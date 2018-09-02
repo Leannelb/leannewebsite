@@ -1,14 +1,15 @@
         /*Styling the icons*/
-        i.fa {
-            font-size:50px;
-            color:purple;
-            padding:30px;
-            
-        }
+i.fa {
+    font-size:50px;
+    color: rgba(230, 70, 100);
+    padding:30px;
+
+}
             
    
-        #footer .items{
-            text-align:center;
-            max-width:100%;
+#footer .items{
+    text-align:center;
+    max-width:100%;
+    background: rgb(12, 3, 4);
 
-        }
+}
