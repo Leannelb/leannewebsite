@@ -11,7 +11,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#top-content">About</a>
+                                <a class="nav-link scroll-link" [routerLink]="['']">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link scroll-link" href="#portfolio">Portfolio</a>
@@ -26,7 +26,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link scroll-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#section-4">Hobbies</a>
                                     <div class="dropdown-menu">
-                                        <a class="nav-link scroll-link dropdown-item" [routerLink]="[ '/books']">Books I'm Reading</a>
+                                        <a class="nav-link scroll-link dropdown-item" [routerLink]="['/books']">Books I'm Reading</a>
                                         <a class="nav-link scroll-link dropdown-item" [routerLink]="[ '/path']">Courses I'm Completing</a>
                                         <a class="nav-link scroll-link dropdown-item" href="#section-4">Blog</a>
                                     </div>
