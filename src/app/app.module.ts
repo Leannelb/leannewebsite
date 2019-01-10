@@ -15,15 +15,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BooksComponent } from './components/books/books.component';
 import { APP_BASE_HREF } from '@angular/common';
 
-const appRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'about', component: AboutMeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'code', component: CodeSnippitsComponent },
-  { path: 'books', component: BooksComponent }
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +29,6 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes), // <-- installs Router routes, components and services
     AppRoutingModule,
     AngularFontAwesomeModule
   ],

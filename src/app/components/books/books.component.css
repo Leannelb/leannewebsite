@@ -1,0 +1,29 @@
+
+
+#books {
+    background: rgb(12, 3, 4);
+    padding-bottom: 66px;
+    padding-top:  66px;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+ }
+
+
+ #books a, #books a:visited  { color: #fff; }
+ #books a:hover, #books a:focus { color: #11ABB0; }
+ 
+/* You can add global styles to this file, and also import other style files */
+.bookSection > .h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: white;
+    margin-bottom: 12px;
+ }
+ .bookSection > .p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ .bookSection{
+    padding: 1%;
+ }

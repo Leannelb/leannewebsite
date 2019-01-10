@@ -3,42 +3,26 @@
         <div class="col-12">
             <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"></a>
+                    <a class="navbar-brand" [routerLink]="['']">BRAND</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" [routerLink]="['']">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#portfolio">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#resume">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#skills">Skills</a>
-                            </li>
-                            <div class="dropdown">
-                                <li class="nav-item">
-                                    <a class="nav-link scroll-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#section-4">Hobbies</a>
-                                    <div class="dropdown-menu">
-                                        <a class="nav-link scroll-link dropdown-item" [routerLink]="['/books']">Books I'm Reading</a>
-                                        <a class="nav-link scroll-link dropdown-item" [routerLink]="[ '/path']">Courses I'm Completing</a>
-                                        <a class="nav-link scroll-link dropdown-item" href="#section-4">Blog</a>
-                                    </div>
-                                </li>
-                            </div>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#section-4">Footer</a>
-                            </li>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right ml-auto">
+                            <li class="nav-item"><a routerLink="/">Home</a></li>
+                            <li class="nav-item"><a routerLink="/about">About</a></li>
+                            <li class="nav-item"><a routerLink="/portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a routerLink="/resume">Resume</a></li>
+                            <li class="nav-item"><a routerLink="/code">Code</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-</div>
+
+</div> 
+
+
+
