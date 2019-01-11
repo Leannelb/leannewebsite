@@ -1,12 +1,36 @@
-/***** Top menu *****/
+.navbar {
+  background-color: rgb(221, 71, 107) !important;
+  color: white;
+}
+.dropdown-menu {
+  background-color: rgb(221, 71, 107) !important;
+  color: white;
+}
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar .navbar-brand:hover{
+  color: white;
+}
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar .navbar-nav li a {
+  color: white;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color:white;
+}
+
+/* 
+
+/***** Top menu 
 .navbar .navbar-no-bg {
-/* “navbar-no-bg” to make the menu transparent when the user is at the top
-page scrolls down to a certain point, we remove the class “navbar-no-bg” from the HTML code using JavaScript, and the menu’s background becomes of a solid color (#444) with no transparency */
   background-color: rgba(230, 70, 100, .7);
-  justify-self: right;
 }
 .dropdown-menu{
   background-color: rgba(230, 70, 100, .7);
+  padding: 10px;
 }
 a {
   color: white;
@@ -41,10 +65,4 @@ a {
   padding-right: 1rem;
 }
 
-.navbar-brand {
-  width: 30px;
-  height: 30px;
-  background: url(../../assets/images/lillycode2_icon.png) left center no-repeat;
-  border: 0;
-  text-indent: -99999px;
-}
+ */
