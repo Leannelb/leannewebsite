@@ -9,6 +9,16 @@
     padding-right: 10%;
     text-align: justify;
  }
+ h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 5%;
+ }
+
+ p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
 
 
  #books a, #books a:visited  { color: #fff; }

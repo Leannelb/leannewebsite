@@ -6,3 +6,6 @@
  purple: rgb(73, 7, 84);
  peach: (247,233, 196);
  gold: (221, 168, 97); */
+ body {
+    padding-top: 40px;
+  }

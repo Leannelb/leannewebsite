@@ -9,10 +9,10 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'about', component: AboutMeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'code/:slug', component: CodeSnippitsComponent },
+  // { path: 'about', component: AboutMeComponent },
+  // { path: 'portfolio', component: PortfolioComponent },
+  // { path: 'resume', component: ResumeComponent },
+  // { path: 'code/:slug', component: CodeSnippitsComponent },
   { path: 'books', component: BooksComponent }
 ];
 

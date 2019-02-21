@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  show:boolean = false;
 
+ 
   constructor() { }
 
   ngOnInit() {
+  
+  }
+  public toggleCollapse() {
+    this.show = !this.show
   }
 
 }
