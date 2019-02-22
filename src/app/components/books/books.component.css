@@ -1,39 +1,36 @@
 
 
 #books {
-    background: rgb(12, 3, 4);
-    padding-bottom: 66px;
-    padding-top:  66px;
-    overflow: hidden;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: justify;
+   background: #0c0304;
+   overflow: hidden;
+   padding:10%;
+   padding-top:15%;
+   color: #afaaaa;
  }
  h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 5%;
  }
+h3 {
+   font-size: 1rem;
+   font-style: italic;
+   color: #d4d1d1;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   letter-spacing: .5px;
+ }
+  p, li {
+   font-family: 'Montserrat', sans-serif;
+   color: #afaaaa;
+   list-style: none;
+   font-size: .85rem;
+   text-align: justify;
+   line-height: 1.5rem;
+ }
 
- p {
-   line-height: 30px;
-   color: #7A7A7A;
+ ul { 
+ padding-inline-start: 0%;
 }
-
-
  #books a, #books a:visited  { color: #fff; }
- #books a:hover, #books a:focus { color: #11ABB0; }
- 
-/* You can add global styles to this file, and also import other style files */
-.bookSection > .h2 {
-    font: 22px/30px 'opensans-bold', sans-serif;
-    color: white;
-    margin-bottom: 12px;
- }
- .bookSection > .p {
-    line-height: 30px;
-    color: #7A7A7A;
- }
- .bookSection{
-    padding: 1%;
- }
+#books a:hover, #books a:focus { color: #11ABB0; }
