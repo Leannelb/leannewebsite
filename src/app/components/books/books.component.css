@@ -1,36 +1,50 @@
-
-
 #books {
-   background: #0c0304;
-   overflow: hidden;
-   padding:10%;
-   padding-top:15%;
-   color: #afaaaa;
- }
- h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 5%;
- }
-h3 {
-   font-size: 1rem;
-   font-style: italic;
-   color: #d4d1d1;
-   padding-top: 3%;
-   padding-bottom: 3%;
-   letter-spacing: .5px;
- }
-  p, li {
-   font-family: 'Montserrat', sans-serif;
-   color: #afaaaa;
-   list-style: none;
-   font-size: .85rem;
-   text-align: justify;
-   line-height: 1.5rem;
- }
-
- ul { 
- padding-inline-start: 0%;
+  background: #0c0304;
+  overflow: hidden;
+  padding: 10%;
+  padding-top: 15%;
+  color: #afaaaa;
 }
- #books a, #books a:visited  { color: #fff; }
-#books a:hover, #books a:focus { color: #11ABB0; }
+h2 {
+  font: 22px/30px "opensans-bold", sans-serif;
+  color: #fff;
+}
+h3 {
+  font-size: 1rem;
+  font-style: italic;
+  color: #d4d1d1;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  letter-spacing: 0.5px;
+}
+p,
+li {
+  font-family: "Montserrat", sans-serif;
+  color: #afaaaa;
+  list-style: none;
+  font-size: 0.85rem;
+  text-align: -webkit-left;
+  line-height: 1.5rem;
+  text-align-last: left;
+}
+
+ul {
+  padding-inline-start: 0%;
+}
+.cite {
+  color: rgba(204, 140, 164, 0.7);
+}
+.listGap{
+    padding-top: 5%;
+}
+#secondSection {
+  padding-top: 10%;
+}
+#books a,
+#books a:visited {
+  color: #fff;
+}
+#books a:hover,
+#books a:focus {
+  color: #11abb0;
+}
