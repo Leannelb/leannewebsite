@@ -14,29 +14,17 @@
 		            /*window.location.hash = target;*/
 		        });
 	        }
-	    });
+		});
+
+		//Close navbar on click of anchor links
+		$('#navbarSupportedContent .navbar-nav>li>a').click(function() {
+			if ( ($(this).hasClass('scrollto')) && (!$(this).parent().hasClass('dropdown'))){
+				$(this).closest('.navbar-collapse').removeClass('show');
+				$(this).closest('.navbar').find('.navbar-toggler').addClass('collapsed');
+			}
+		});
 
 	});
-
-	$(window).resize(function () {
-	    waitForFinalEvent(function(){
-
-	    }, 500, "TE7c79NYwz");
-	});
-
-	var waitForFinalEvent = (function () {
-	  var timers = {};
-	  return function (callback, ms, uniqueId) {
-	    if (!uniqueId) {
-	      uniqueId = "Don't call this twice without a uniqueId";
-	    }
-	    if (timers[uniqueId]) {
-	      clearTimeout (timers[uniqueId]);
-	    }
-	    timers[uniqueId] = setTimeout(callback, ms);
-	  };
-	})();
-
 })(jQuery);
 
 
