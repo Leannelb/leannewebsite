@@ -1,7 +1,17 @@
 .nav {
   background-color: rgba(152, 1, 147, 0.2);
 }
+.mainSpace{
+  padding-top: 15%;
+  width: 100%;
 
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15%;
+}
 #header {
   position: relative;
   height: 800px;
@@ -13,7 +23,7 @@
   -webkit-background-size: cover !important;
   text-align: center;
   overflow: hidden;
-  padding-top: 15%;
+
 }
 .spacer {
     position: relative;
@@ -93,7 +103,7 @@ h2 {
 #about {
   background: rgb(12, 3, 4);
   padding-bottom: 66px;
-  padding-top: 15%;
+  padding-top: 30%;
 
   overflow: hidden;
   padding-left: 10%;
@@ -140,7 +150,7 @@ h2 {
   background: #0c0304;
   overflow: hidden;
   padding:10%;
-  padding-top:15%;
+  padding-top:30%;
   color: #afaaaa;
 }
 
@@ -212,6 +222,6 @@ ul  {
 }
 #portfolio{
    padding:10%;
-   padding-top: 15%;
+   padding-top: 30%;
    background-color: rgba(230, 70, 100, .7);
 }
