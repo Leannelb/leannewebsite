@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ResumeComponent } from './components/resume/resume.component';
-import { CodeSnippitsComponent } from './components/code-snippits/code-snippits.component';
+
 import { BooksComponent } from './components/books/books.component';
 import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -13,7 +11,8 @@ const routes: Routes = [
   // { path: 'portfolio', component: PortfolioComponent },
   // { path: 'resume', component: ResumeComponent },
   // { path: 'code/:slug', component: CodeSnippitsComponent },
-  { path: 'books', component: BooksComponent }
+  { path: 'books', component: BooksComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

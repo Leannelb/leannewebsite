@@ -13,6 +13,8 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BooksComponent } from './components/books/books.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { ContactComponent } from './components/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { APP_BASE_HREF } from '@angular/common';
     CodeSnippitsComponent,
     AboutMeComponent,
     FooterComponent,
-    BooksComponent
+    BooksComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     {
