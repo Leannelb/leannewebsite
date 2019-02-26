@@ -2,46 +2,29 @@
 <section id="contact">
    <div class="row">
       <div class="col-sm-10 offset-1">
-         <!-- <h2>Books I'm Currently Reading</h2>
-         <h3 class="books_h3">You Don't Know JS - Scopes & Closure <cite class="cite">by Kyle Simpson</cite></h3>
-         <p>Can be found at: <a target="blank" href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a>.
+         <mat-card>
+            <h1>Get in touch!</h1>
+               <mat-form-field class="example-full-width" style="width: 100%">
+                  <input matInput placeholder="Email" [formControl]="emailFormControl">
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                     Please enter a valid email
+                  </mat-error>
+                  </mat-error *ngIf="emailFormControl.hasError('required')">
+                     Email is <strong>required</strong>
+                  <mat-error>
+               </mat-form-field>
 
-            Guys, I can't say enough about this fantastic resource for anyone learning JS. Really helpful, you can
-            get them all FREE, all 6 books. You can purchase these in Kindle, hardback or paperback versions. If you
-            have the spare doe and would like a copy, I recommend going for it, splash out! As it's such a great and
-            coherent resource to have in the arsenal and supporting the author who made these brilliant resources
-            free just seems right!
-         </p>
+               <mat-form-field class="example-full-width" style="width: 100%">
+                  <input matInput placeholder="Name" [formControl]="nameFormControl">
+                  <mat-error *ngIf="nameFormControl.hasError('name') && !nameFormControl.hasError('required')">
+                     NEmae must be at least 3 characters
+                  </mat-error>
+                  </mat-error *ngIf="nameFormControl.hasError('required')">
+                     Email is <strong>required</strong>
+                  <mat-error>
+               </mat-form-field>
 
-         <ul class="text-justify">
-            <li>The books I am referring to</li>
-            <li> Up & Going</li>
-            <li> Scope & Closures</li>
-            <li>this & Object Prototypes</li>
-            <li>Types & Grammar</li>
-            <li>Async & Performance</li>
-            <li>ES6 & Beyond</li>
-         </ul> -->
-         <form>
-
-          <!-- name -->
-          <div class="field">
-            <input type="text" name="name" class="input" placeholder="Your Name">
-          </div>
-        
-          <!-- email -->
-          <div class="field">
-            <input type="email" name="email" class="input" placeholder="Your Email">
-          </div>
-        
-          <!-- message -->
-          <div class="field">
-            <textarea class="textarea" name="message" placeholder="What's on your mind?"></textarea>
-          </div>
-        
-          <button type="submit" class="button is-danger is-large">Submit</button>
-        
-        </form>
+         </mat-card>
       </div>
    </div>
    <hr>

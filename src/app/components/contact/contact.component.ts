@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -14,5 +15,16 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  emailformControl = new FormControl('',[
+    Validators.required,
+    Validators.email,
+  ])
+
+  nameFormControl = new FormControl('',[
+    Validators.required,
+    Validators.minLength(3)
+  ])
+
 
 }
