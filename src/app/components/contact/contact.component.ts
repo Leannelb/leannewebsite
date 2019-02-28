@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Material } from '../../app-material'
 
 @Component({
   selector: 'app-contact',

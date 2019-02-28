@@ -15,6 +15,8 @@ import { BooksComponent } from './components/books/books.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { ContactComponent } from './components/contact/contact.component';
 import { Material } from './app-material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { Material } from './app-material';
     AppRoutingModule,
     FormsModule,
     Material,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
