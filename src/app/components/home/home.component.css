@@ -150,7 +150,7 @@ h2 {
   background: #0c0304;
   overflow: hidden;
   padding:10%;
-  padding-top:30%;
+  padding-top:10%;
   color: #afaaaa;
 }
 
@@ -222,6 +222,6 @@ ul  {
 }
 #portfolio{
    padding:10%;
-   padding-top: 30%;
+   padding-top: 10%;
    background-color: rgba(230, 70, 100, .7);
 }

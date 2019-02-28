@@ -2,7 +2,7 @@
   background: #0c0304;
   overflow: hidden;
   padding: 10%;
-  padding-top: 30%;
+  padding-top: 15%;
   color: #afaaaa;
 }
 h2 {
@@ -13,7 +13,7 @@ h3 {
   font-size: 1rem;
   font-style: italic;
   color: #d4d1d1;
-  padding-top: 10%;
+  padding-top: 7%;
   padding-bottom: 3%;
   letter-spacing: 0.5px;
 }
@@ -32,13 +32,13 @@ ul {
   padding-inline-start: 0%;
 }
 .cite {
-  color: rgba(204, 140, 164, 0.7);
+  color: rgba(204, 140, 164, 0.7)!important;
 }
 .listGap{
     padding-top: 5%;
 }
 #secondSection {
-  padding-top: 10%;
+  padding-top: 7%;
 }
 #books a,
 #books a:visited {
