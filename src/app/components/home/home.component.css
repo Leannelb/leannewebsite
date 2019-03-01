@@ -8,9 +8,7 @@
 }
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15%;
+  padding: 15% ;
 }
 #header {
   position: relative;
@@ -102,12 +100,8 @@ h2 {
 
 #about {
   background: rgb(12, 3, 4);
-  padding-bottom: 66px;
-  padding-top: 30%;
-
+  padding: 15% 10% 15% 10%;
   overflow: hidden;
-  padding-left: 10%;
-  padding-right: 10%;
   text-align: justify;
 }
 
@@ -130,6 +124,7 @@ h2 {
 #about .download {
   width: 58.33333%;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 #about .main-col { padding-right: 5%; }
 #about .download .button {
@@ -149,8 +144,7 @@ h2 {
 #resume {
   background: #0c0304;
   overflow: hidden;
-  padding:10%;
-  padding-top:10%;
+  padding: 15% 10% 15% 10%;
   color: #afaaaa;
 }
 
@@ -221,7 +215,6 @@ ul  {
   margin-bottom: 12px;
 }
 #portfolio{
-   padding:10%;
-   padding-top: 10%;
+   padding: 15% 10% 15% 10%;
    background-color: rgba(230, 70, 100, .7);
 }

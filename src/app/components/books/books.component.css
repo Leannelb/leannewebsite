@@ -1,8 +1,7 @@
 #books {
   background: #0c0304;
   overflow: hidden;
-  padding: 10%;
-  padding-top: 15%;
+  padding: 15% 10% 15% 10%;
   color: #afaaaa;
 }
 h2 {
