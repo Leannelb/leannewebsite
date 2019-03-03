@@ -21,6 +21,7 @@
     "@angular/material": "^7.3.3",
     "@angular/platform-browser": "^6.1.9",
     "@angular/platform-browser-dynamic": "^6.1.9",
+    "@angular/platform-server": "^6.1.9",
     "@angular/router": "^6.1.9",
     "angular-bootstrap-md": "^7.4.1",
     "angular-font-awesome": "^3.1.2",

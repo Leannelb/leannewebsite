@@ -33,7 +33,7 @@ import { GoodreadsService } from './goodreads-service.service';
     ContactComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
