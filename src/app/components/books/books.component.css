@@ -1,9 +1,33 @@
+
+@media only screen and (min-width: 900px)  {
+  #books {
+    padding: 15% 10% 30% 10% !important;
+  }
+}
+@media (max-width: 900px ) and (min-width: 750px){
+  #books {
+    padding: 20% 10% 30% 10% !important;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 550px){
+  #books {
+    padding: 20% 10% 30% 10% !important;
+  }
+}
+@media (max-width: 550px) and (min-width: 300px){
+  #books {
+    padding: 30% 10% 30% 10% !important;
+  }
+}
+
 #books {
   background: #0c0304;
   overflow: hidden;
-  padding: 15% 10% 15% 10%;
+  /* padding: 10% 10% 15% 10%; */
   color: #afaaaa;
 }
+
 h2 {
   font: 22px/30px "opensans-bold", sans-serif;
   color: #fff;
@@ -31,10 +55,10 @@ ul {
   padding-inline-start: 0%;
 }
 .cite {
-  color: rgba(204, 140, 164, 0.7)!important;
+  color: rgba(204, 140, 164, 0.7) !important;
 }
-.listGap{
-    padding-top: 5%;
+.listGap {
+  padding-top: 5%;
 }
 #secondSection {
   padding-top: 7%;

@@ -15,8 +15,9 @@ import { BooksComponent } from './components/books/books.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { ContactComponent } from './components/contact/contact.component';
 import { Material } from './app-material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { GoodreadsService } from './goodreads-service.service';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     Material,
@@ -40,9 +42,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers: [
+    GoodreadsService,
     {
       provide: APP_BASE_HREF, useValue: window['_app_base'] || '/'
     }
+    
   ],
   bootstrap: [AppComponent]
 })
