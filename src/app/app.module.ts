@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -20,12 +21,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from './components/core/core.module';
 import { GoodreadsService } from './services/goodreads-service.service';
 
+import { environment } from '../environments/environment';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    // AngularFirestoreModule,
-    // AngularFireStorageModule,
-    // AngularFireAuthModule,
     NavComponent,
     HomeComponent,
     CodeSnippitsComponent,
@@ -35,6 +36,10 @@ import { GoodreadsService } from './services/goodreads-service.service';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
