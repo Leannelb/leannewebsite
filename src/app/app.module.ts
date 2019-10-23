@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
-import { RouterModule, Routes } from '@angular/router';
 import { CodeSnippitsComponent } from './components/code-snippits/code-snippits.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BooksComponent } from './components/books/books.component';

@@ -1,5 +1,8 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
+body{
+    margin:0;
+}
 
 @media only screen and (min-width: 900px)  {
     #about,#portfolio ,  #resume  {
