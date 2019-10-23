@@ -18,10 +18,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { Material } from './app-material';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { CoreModule } from './components/core/core.module';
 import { GoodreadsService } from './services/goodreads-service.service';
 
 import { environment } from '../environments/environment';
+import { SharedModule } from './modules/shared/shared.module';
+import { MaterialModule } from './modules/material/material.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -32,10 +34,12 @@ import { environment } from '../environments/environment';
     CodeSnippitsComponent,
     FooterComponent,
     BooksComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireStorageModule,
@@ -46,7 +50,10 @@ import { environment } from '../environments/environment';
     Material,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    CoreModule
+    SharedModule,
+    MaterialModule
+  ],
+  exports: [
   ],
   providers: [
     GoodreadsService,
