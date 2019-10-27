@@ -23,6 +23,7 @@ import { environment } from '../environments/environment';
 import { SharedModule } from './modules/shared/shared.module';
 import { MaterialModule } from './modules/material/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PostModule } from './modules/post/post.module';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    PostModule
   ],
   exports: [
   ],
