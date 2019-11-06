@@ -7,9 +7,9 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'blog/:id', component: PostComponent },
+  { path: 'list/:id', component: PostComponent },
   { path: 'list', component: ListComponent },
-  { path: 'blog', component: DashboardComponent }
+  { path: '', component: DashboardComponent }
 ]
 @NgModule({
   imports: [
