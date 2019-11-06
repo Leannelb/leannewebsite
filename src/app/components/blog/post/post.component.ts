@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
+import { BlogService } from 'src/app/services/blog.service';
+import { Post } from 'src/app/models/post.model';
+
 
 @Component({
   selector: 'lillycode-post',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  constructor() { }
+  post: Post
+
+  constructor(
+    private route: ActivatedRoute,
+    private blogService: BlogService
+  ) { }
 
   ngOnInit() {
+    this.getPost()
+    console.log(this)
   }
 
+  getPost() {
+    const id = this.route.snapshot.paramMap.get('id');
+    return this.blogService.getPostData(id).subscribe(data => this.post = data)
+  }
 }

@@ -10,8 +10,9 @@ import { map, filter, scan } from 'rxjs/operators';
 export class BlogService {
 
   postCollection: AngularFirestoreCollection<Post>
+  postDoc: AngularFirestoreDocument<Post>
 
-  constructor(private afs: AngularFirestore ) {
+  constructor(public afs: AngularFirestore ) {
     this.postCollection = this.afs.collection('posts', ref => 
     ref.orderBy('published', 'desc'))
    }
@@ -25,6 +26,11 @@ export class BlogService {
        })
      }
      ))
+    }
+
+    getPostData(id: string) {
+      this.postDoc = this.afs.doc<Post>(`posts/${id}`)
+      return this.postDoc.valueChanges()
     }
     
 }
