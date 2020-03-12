@@ -18,25 +18,25 @@ import { Material } from './app-material';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { GoodreadsService } from './goodreads-service.service';
+import { SharedModule } from './shared/shared.module';
+import { BlogModule } from './components/blog/blog.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     HomeComponent,
     ResumeComponent,
     PortfolioComponent,
     CodeSnippitsComponent,
     AboutMeComponent,
-    FooterComponent,
-    BooksComponent,
-    ContactComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    SharedModule,
+    BlogModule,
     Material,
     ReactiveFormsModule,
     BrowserAnimationsModule
