@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { BlogModule } from './components/blog/blog.module';
 import { BooksComponent } from './components/books/books.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { SharedModule } from './shared/shared.module';
+import { from } from 'rxjs';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -14,7 +14,7 @@ const routes: Routes = [
   // { path: 'code/:slug', component: CodeSnippitsComponent },
   { path: 'books', component: BooksComponent },
   { path: 'contact', component: ContactComponent }, 
-  { path: 'blog', loadChildren: './components/blog/blog.module#BlogModule' },
+  // { path: 'blog', loadChildren: () => BlogModule }
 ];
 
 @NgModule({

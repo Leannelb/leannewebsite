@@ -35,11 +35,11 @@ import { BlogModule } from './components/blog/blog.module';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    SharedModule,
     BlogModule,
     Material,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [
     GoodreadsService,

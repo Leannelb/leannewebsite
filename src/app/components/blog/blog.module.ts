@@ -9,15 +9,16 @@ import { BlogsComponent } from './blogs/blogs.component';
 
 @NgModule({
 	imports: [
-    CommonModule,
-    FormsModule,
-    SharedModule,
-    BlogRoutingModule
+        CommonModule,
+        SharedModule,
+        BlogRoutingModule
     ],
     exports: [
         BlogComponent, BlogsComponent
     ],
-	declarations: [BlogComponent, BlogsComponent]
+	declarations: [
+        BlogComponent, BlogsComponent
+    ]
 })
 export class BlogModule {
 }
