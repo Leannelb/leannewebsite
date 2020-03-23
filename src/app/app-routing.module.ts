@@ -5,6 +5,7 @@ import { BooksComponent } from './components/books/books.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { from } from 'rxjs';
+import { BlogComponent } from './components/blog/blog.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -14,7 +15,7 @@ const routes: Routes = [
   // { path: 'code/:slug', component: CodeSnippitsComponent },
   { path: 'books', component: BooksComponent },
   { path: 'contact', component: ContactComponent }, 
-  // { path: 'blog', loadChildren: () => BlogModule }
+  { path: 'blog', component: BlogComponent }
 ];
 
 @NgModule({

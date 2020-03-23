@@ -8,7 +8,6 @@ import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CodeSnippitsComponent } from './components/code-snippits/code-snippits.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BooksComponent } from './components/books/books.component';
@@ -28,7 +27,6 @@ import { BlogModule } from './components/blog/blog.module';
     ResumeComponent,
     PortfolioComponent,
     CodeSnippitsComponent,
-    AboutMeComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
