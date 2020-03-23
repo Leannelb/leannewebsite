@@ -24,7 +24,6 @@
             ],
             "styles": [
               "src/assets/styles/styles.css",
-              "src/assets/styles/debug.css",
               "src/assets/styles/reset.css"
                         ],
             "scripts": []
