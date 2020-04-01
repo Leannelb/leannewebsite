@@ -24,8 +24,9 @@
             ],
             "styles": [
               "src/assets/styles/styles.css",
-              "src/assets/styles/reset.css"
-                        ],
+              "src/assets/styles/reset.css",
+              "./node_modules/font-awesome/css/font-awesome.css"
+            ],
             "scripts": []
           },
           "configurations": {

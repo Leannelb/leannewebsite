@@ -1,11 +1,16 @@
-:root { font: 20px/1.2 "Roboto", sans-serif; }
+/* :root { font: 20px/1.2 "Roboto", sans-serif; } */
 
 article{
     display: grid;
     grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr; /* splits the blog page into 3 */
-    height: 100vh;
-    padding: 0.5in 0;
+    /* height: 100vh;
+    padding: 0.5in 0; */
+
+	background: linear-gradient(hsl(250, 100%, 75%), white 6.55rem);
+}
+#the-cosmos{
     padding-top: 20%;
+
 }
 img.size-1, img.size-2, img.size-3, img.size-4 {
     width: 100%;
@@ -42,13 +47,6 @@ figcaption p { margin-top: 0.5em; font: 400 1.0rem/1.5 "Roboto"; color: hsl(000,
 
 @media (max-width: 8.5in) { :root {font-size: 18px; }}
 @media (max-width: 5in) { :root {font-size: 16px; }}
-
-
-
-
-
-
-
 @media (max-width: 8.5in) {
     article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr }
 }
