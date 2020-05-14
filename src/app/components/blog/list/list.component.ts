@@ -15,8 +15,8 @@ export class ListComponent implements OnInit {
   constructor( private blogService: BlogService) { }
 
   ngOnInit() {
-    this.posts = this.blogService.getPosts()
-    console.log(this);
+    // this.posts = this.blogService.getPosts()
+    // console.log(this);
   }
 
 }
