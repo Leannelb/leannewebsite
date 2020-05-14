@@ -1,6 +1,7 @@
 .navbar {
   background-color: rgb(221, 71, 107) !important;
   color: white;
+  font-size: 1.1em;
 }
 .dropdown-menu {
   background-color: rgb(221, 71, 107) !important;
@@ -25,48 +26,3 @@
   padding-left: 5%;
 }   
 
-
-/* 
-
-/***** Top menu 
-.navbar .navbar-no-bg {
-  background-color: rgba(230, 70, 100, .7);
-}
-.dropdown-menu{
-  background-color: rgba(230, 70, 100, .7);
-  padding: 10px;
-}
-a {
-  color: white;
-  padding: 10px;
-  
-}
-
-.navbar-dark .navbar-nav {
-  font-size: 15px;
-  color: #fff;
-  text-transform: uppercase;
-
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8);
-  border: 5%;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: #fff;
-  outline: 0;
-}
-
-.navbar-expand-md .navbar-nav .nav-link {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
- */

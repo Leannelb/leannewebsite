@@ -1,0 +1,52 @@
+/* :root { font: 20px/1.2 "Roboto", sans-serif; } */
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr; /* splits the blog page into 3 */
+    /* height: 100vh;
+    padding: 0.5in 0; */
+
+	background: linear-gradient(hsl(250, 100%, 75%), white 6.55rem);
+}
+#the-cosmos{
+    padding-top: 20%;
+
+}
+img.size-1, img.size-2, img.size-3, img.size-4 {
+    width: 100%;
+}
+article * { 
+    grid-column: start / end;
+}
+.size-1 { grid-column: 4/5; }
+.size-2 { grid-column: 3/6; }
+.size-3 { grid-column: 2/7; }
+.size-4 { grid-column: 1/8; }
+
+h2, p { margin-bottom: 2.4rem; }
+
+h1   { font: 700 2.0rem/1.2 "Roboto"; color: hsl(000, 0%, 33%); }
+h2   { font: 400 1.5rem/1.2 "Roboto"; color: hsl(000, 0%, 33%); }
+time { font: 700 1.0rem/1.2 "Roboto"; color: hsl(250, 100%, 45%); }
+h3   { font: 700 1.0rem/1.2 "Roboto"; color: hsl(250, 100%, 75%); }
+p    { font: 400 1.0rem/2 "Roboto"; color: hsl(000, 0%, 33%); }
+
+a    { box-shadow: inset 0 -0.25em hsl(55, 100%, 75%);}
+
+figcaption {
+    display: flex;
+	justify-content: center;    
+}
+figcaption p { margin-top: 0.5em; font: 400 1.0rem/1.5 "Roboto"; color: hsl(000, 000%, 83%); }
+
+.share img {
+	padding: 0.75rem;
+	width:   1.50rem;
+	height:  1.50rem;
+}
+
+@media (max-width: 8.5in) { :root {font-size: 18px; }}
+@media (max-width: 5in) { :root {font-size: 16px; }}
+@media (max-width: 8.5in) {
+    article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr }
+}

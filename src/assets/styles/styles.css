@@ -1,0 +1,43 @@
+@media only screen and (min-width: 900px)  {
+    #about,#portfolio ,  #resume  {
+        padding: 10% 10% 30% 10%!important;
+    }
+  
+    #header  {
+        padding: 20% 10% 30% 10%!important;
+    }
+  }
+  @media (max-width: 900px ) and (min-width: 750px){
+    #about,  #resume{
+        padding: 15% 10% 30% 10%!important;
+    }
+    #header  {
+        padding: 20% 10% 30% 10%!important;
+    }
+    #portfolio {
+        padding: 15% 10% 30% 10%!important;
+    }
+  }
+  
+  @media (max-width: 750px) and (min-width: 550px){
+    #about, #portfolio {
+        padding: 15% 10% 30% 10%!important;
+    }
+    #header, #resume {
+        padding: 20% 10% 30% 10%!important;
+    }
+  }
+  @media (max-width: 550px) and (min-width: 300px){
+    #about {
+        padding: 25% 10% 30% 10%!important;
+    }
+    #portfolio {
+        padding: 25% 10% 30% 10%!important;
+    }
+    #resume {
+        padding: 30% 10% 30% 10%!important;
+    }
+    #header {
+        padding: 30% 10% 30% 10%!important;
+    }
+  }

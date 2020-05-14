@@ -9,8 +9,8 @@ body{
         padding: 10% 10% 10% 10%!important;
     }
   
-    #header  {
-        padding: 20% 10% 20% 10%!important;
+    #header{
+        padding: 20% 10% 30% 10%!important;
     }
   }
   @media (max-width: 900px ) and (min-width: 750px){
