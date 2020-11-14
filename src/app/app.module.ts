@@ -11,15 +11,21 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { BlogModule } from './components/blog/blog.module';
-import { NavComponent } from './nav/nav.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MdToHtmlPipe } from './md-to-html.pipe';
+import { ContentfulService } from './contentful.service';
+import { ListComponent } from './components/blog/list/list.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CodeSnippitsComponent,
-    NavbarComponent
+    NavbarComponent,
+    MdToHtmlPipe,
+    ListComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -32,6 +38,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     SharedModule
+  ],
+  providers: [
+    ContentfulService
   ],
   bootstrap: [AppComponent]
 })

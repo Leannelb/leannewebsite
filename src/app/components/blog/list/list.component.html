@@ -1,6 +1,23 @@
-<div class="mat-typography">
-<div *ngFor="let post of posts | async">
-  <h2 routerLink="{{post.id}}">{{ post.title }}</h2>
-  <p>{{ post.content }}</p>
-</div>
+<div>
+  <div class="alert alert-info" role="alert" *ngFor="let course of courses">
+      <div class="d-flex flex-wrap flex-xl-nowrap flex-lg-nowrap flex-md-nowrap">
+        <div class="p-2">
+            <!-- <a href="{{ course.fields.url }}" target="_blank"><img src="{{ course.fields.courseImage.fields.file.url }}" class="rounded" width="196" /></a> -->
+        </div>
+        <div class="p-2">
+          <!-- <h5 class="alert-heading"><a href="{{ course.fields.url }}" target="_blank">{{ course.fields.title}}</a></h5> -->
+          <p><i>{{ course.fields.title }}</i></p>
+          <div>{{ course.fields.slug }}</div>
+          <div>{{ course.fields.image }}</div>
+          <div>{{ course.fields.description }}</div>
+          <div>{{ course.fields.duration }}</div>
+          <div>{{ course.fields.lessons }}</div>
+          <div>{{ course.fields.categories }}</div>
+
+
+          <!-- <a href="{{ course.fields.url }}" target="_blank" class="btn btn-success">Go To Course</a> -->
+          <button (click)="goToCourseDetailsPage(course.sys.id)" class="btn btn-info">Course Details</button>
+        </div>
+      </div>
+    </div>
 </div>

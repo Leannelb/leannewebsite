@@ -1,22 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from 'src/app/models/post.model';
-import { BlogService } from 'src/app/services/blog.service';
-import { Observable, Subject, asapScheduler, pipe, of, from, interval, merge, fromEvent, SubscriptionLike, PartialObserver } from 'rxjs';
+import { Router } from '@angular/router';
+import { Entry } from 'contentful';
+import { ContentfulService } from 'src/app/contentful.service';
 
 @Component({
-  selector: 'lillycode-list',
+  selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
 
-  posts: Observable<Post[]>
+  courses: Entry<any>[] = [];
 
-  constructor( private blogService: BlogService) { }
+  constructor(
+    private router: Router,
+    private contentfulService: ContentfulService
+  ) { }
 
   ngOnInit() {
-    // this.posts = this.blogService.getPosts()
-    // console.log(this);
+    this.contentfulService.getCourses()
+      .then(courses => this.courses = courses);
+  }
+
+  goToCourseDetailsPage(courseId) {
+    console.log(courseId);
+    this.router.navigate(['/course', courseId]);
   }
 
 }
