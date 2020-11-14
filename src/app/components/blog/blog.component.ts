@@ -25,7 +25,7 @@ export class BlogComponent implements OnInit {
     this.contentfulService.getCourse(courseId)
       .then((course) => {
         this.course = course;
-        console.log(this.course);
+        console.log(this.course,'>>>>>>>>this.course');
         
       });
   }

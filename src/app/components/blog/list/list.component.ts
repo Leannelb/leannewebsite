@@ -20,6 +20,7 @@ export class ListComponent implements OnInit {
   ngOnInit() {
     this.contentfulService.getCourses()
       .then(courses => this.courses = courses);
+      console.log('courses >>>', this.courses)
   }
 
   goToCourseDetailsPage(courseId) {
