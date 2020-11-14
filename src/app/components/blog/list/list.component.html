@@ -42,7 +42,9 @@
 
         
                   <!-- <a href="{{ course.fields.url }}" target="_blank" class="btn btn-success">Go To Course</a> -->
-                  <button (click)="goToCourseDetailsPage(course.sys.id)" class="btn btn-info">Course Details</button>
+                  <div class="btn-wrapper">
+                    <button (click)="goToCourseDetailsPage(course.sys.id)" class="btn btn-info">Course Details</button>
+                  </div>
                 </div>
               </div>
             </div>
