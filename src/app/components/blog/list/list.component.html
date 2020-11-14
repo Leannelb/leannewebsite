@@ -18,32 +18,22 @@
     </div>
 </section>
 <section id="blog">
-  <div class="row education">
+  <!-- <div class="row education">
       <div class="col-md-12">
           <h1>Blog</h1>
       </div>
-  </div>
+  </div> -->
   <div class="row">
       <div class="col-md-12">
-          <h2>DEVELOPER</h2>
+          <!-- <h2>DEVELOPER</h2> -->
             <div class="blog-post-item" *ngFor="let course of courses">
               <div >
                 <div  class="blog-post">
                   <!-- <h5 class="alert-heading"><a href="{{ course.fields.url }}" target="_blank">{{ course.fields.title}}</a></h5> -->
                   <h1>{{ course.fields.title }}</h1>
-                  <h3 class ="blog_h3">{{ course.fields.slug }}</h3>
-                  <div class="blog_p">{{ course.fields.skillLevel }}</div>
-                  <div class="blog_p">{{ course.fields.description }}</div>
                   <div class="blog_p">{{ course.fields.shortDescription }}</div>
-                  <div class="blog_p">{{ course.fields.duration }}</div>
-                  <!-- <div *ngFor="let course of courses.fields.lessons">
-
-                  </div> -->
-
-        
-                  <!-- <a href="{{ course.fields.url }}" target="_blank" class="btn btn-success">Go To Course</a> -->
-                  <div class="btn-wrapper">
-                    <button (click)="goToCourseDetailsPage(course.sys.id)" class="btn btn-info">Course Details</button>
+                   <div class="btn-wrapper">
+                    <button (click)="goToCourseDetailsPage(course.sys.id)" class="btn">Blog Details</button>
                   </div>
                 </div>
               </div>

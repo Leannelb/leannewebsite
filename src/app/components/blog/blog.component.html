@@ -5,28 +5,50 @@
             <div class="row">
                 <div class="col-12">
                     <div class="banner-text text-capitalize">
-                        <h1 class="responsive-headline">Lilly Blog</h1>
+                        <h1 class="responsive-headline">The Big Data Stack</h1>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center home-text">
-                    <h2 class="banner-text"><b>Coding snippits, tips, tricks &amp; my experiences.</b><br></h2>
+                    <h2 class="banner-text"><i>The Three V's, Data Sources layer, Data Processing Layer, Analytics Layer</i><br></h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section id="blog">
-    <div class="blog" *ngIf="course.fields">
-        <!-- <a href="{{ course.fields.url }}" target="_blank"><img width="40%" style="margin: 10px" class="float-right rounded" src="{{ course.fields.courseImage.fields.file.url }}"/></a> -->
-        <!-- <h2><a href="{{ course.fields.url }}" target="_blank">{{ course.fields.title }}</a></h2> -->
-        <i>by {{ course.fields.title }}</i>
+    <div *ngIf="course.fields">
+        <h1><i> {{ course.fields.title }}</i></h1>
+        <div class="row">
+            <div class="col-md-12">
+                  <div class="blog-post-item" *ngFor="let course of courses">
+                    <div >
+                      <div  class="blog-post">
+                        <h1>{{ course.fields.title }}</h1>
+                        <h3 class ="blog_h3">{{ course.fields.slug }}</h3>
+                        <div class="blog_p">{{ course.fields.skillLevel }}</div>
+                        <div class="blog_p">{{ course.fields.description }}</div>
+                        <div class="blog_p">{{ course.fields.shortDescription }}</div>
+                        <div class="blog_p">{{ course.fields.duration }}</div>
+                      
+                    </div>
+              
+                    <div class="btn-wrapper">
+                        <button (click)="goToCourseDetailsPage(course.sys.id)" class="btn btn-info">Blog Details</button>
+                    </div>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
         <br><br>
         <div [innerHTML]="course.fields.description | mdToHtml"></div>
         <!-- <div [innerHTML]="course.fields.longDescription | mdToHtml"></div> -->
         <!-- <a href="{{ course.fields.url }}" target="_blank" class="btn btn-success">Go To Course</a> -->
+        <div class="btn-wrapper">
         <button (click)="goToList()" class="btn btn-danger">Back To List</button>
     </div>
+</div>
 </section>
   

@@ -95,7 +95,7 @@
     letter-spacing: 1px;
     color: #313131;  
     padding-top: 2%;
-    padding-bottom: 12%;
+    padding-bottom: 2%;
   }
   
   .blog_h3 {
@@ -120,7 +120,15 @@
   .btn-wrapper {
       padding-top:2%;
   }
-  
+  .btn{
+    /* font-family: 'opensans-bold', sans-serif; */
+    font-size: .9rem;
+    /* color:white; */
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    background-color:rgb(221, 71, 107);
+  }
   #blog .header-col { padding-top: 9px; }
   #blog .main-col { padding-right: 10%; }
   
