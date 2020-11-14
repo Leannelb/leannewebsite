@@ -106,6 +106,14 @@
     padding-bottom: 3%;
     letter-spacing: .5px;
   }
+  .blog_p {
+    font-family: "Lora", serif;
+    font-size: 1rem;
+    /* color:white; */
+    color: #313131;  
+    letter-spacing: .5px;
+    padding: 5px 0 5px 0;
+  }
   
   
   #blog .header-col { padding-top: 9px; }
