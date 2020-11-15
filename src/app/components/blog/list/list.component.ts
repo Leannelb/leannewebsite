@@ -10,7 +10,7 @@ import { ContentfulService } from 'src/app/contentful.service';
 })
 export class ListComponent implements OnInit {
 
-  courses: Entry<any>[] = [];
+  blogs: Entry<any>[] = [];
 
   constructor(
     private router: Router,
@@ -18,14 +18,14 @@ export class ListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.contentfulService.getCourses()
-      .then(courses => this.courses = courses);
-      console.log('courses >>>', this.courses)
+    this.contentfulService.getBlogs()
+      .then(blogs => this.blogs = blogs);
+      console.log('blogs >>>', this.blogs)
   }
 
-  goToCourseDetailsPage(courseId) {
-    console.log(courseId);
-    this.router.navigate(['/course', courseId]);
+  goToBlogDetailsPage(blogId) {
+    console.log(blogId);
+    this.router.navigate(['/blog', blogId]);
   }
 
 }

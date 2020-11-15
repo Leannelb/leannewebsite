@@ -1,3 +1,4 @@
+<section id="blog-list">
 <app-nav></app-nav>
 <section id="header">
     <div id="top">
@@ -25,16 +26,13 @@
   </div> -->
   <div class="row">
       <div class="col-md-12">
-          <!-- <h2>DEVELOPER</h2> -->
-            <div class="blog-post-item" *ngFor="let course of courses">
-              <div >
-                <div  class="blog-post">
-                  <!-- <h5 class="alert-heading"><a href="{{ course.fields.url }}" target="_blank">{{ course.fields.title}}</a></h5> -->
-                  <h1>{{ course.fields.title }}</h1>
-                  <div class="blog_p">{{ course.fields.shortDescription }}</div>
+            <div class="blog-post-item" *ngFor="let blog of blogs">
+              <div  class="blog-post" *ngIf="blog.fields">
+                <h1 class="blog-title">{{ blog.fields.title }}</h1>
+                <div class="blog-tag-date-author">By {{ blog.fields.author }} on<i> {{blog.fields.date }}</i> </div>
+                  <div class="blog-short-description">{{ blog.fields.shortDescription }}</div>
                    <div class="btn-wrapper">
-                    <button (click)="goToCourseDetailsPage(course.sys.id)" class="btn">Blog Details</button>
-                  </div>
+                    <button (click)="goToBlogDetailsPage(blog.sys.id)" class="btn">Blog Details</button>
                 </div>
               </div>
             </div>

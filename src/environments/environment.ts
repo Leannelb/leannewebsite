@@ -7,7 +7,7 @@ export const environment = {
 
   contentful: {
     spaceId: 'dw7mwkq576rx',
-    token: 'Idi9wPHEbBl7zahJDcCntqMfDrMjHUB06P2PELbEOSM'
+    token: 'eSVKclCFg3ziplxmTCtRdRl6cyCX6E9H-BIlHJC_qjE'
   }
 };
 

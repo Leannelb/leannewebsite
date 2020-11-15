@@ -9,16 +9,11 @@ import { BlogComponent } from './components/blog/blog.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: '', redirectTo: '/courses', pathMatch: 'full'},
-  { path: 'courses', component: ListComponent},
-  { path: 'course/:id', component: BlogComponent },
+  { path: 'blogs', component: ListComponent},
+  { path: 'blog/:id', component: BlogComponent },
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: 'products',  component: ListComponent },
   { path: 'blog', loadChildren: './components/blog/blog.module#BlogModule'},
-  // { path: 'about', component: AboutMeComponent },
-  // { path: 'portfolio', component: PortfolioComponent },
-  // { path: 'resume', component: ResumeComponent },
-  // { path: 'code/:slug', component: CodeSnippitsComponent },
   { path: 'books', component: BooksComponent },
   { path: 'contact', component: ContactComponent }, 
 ];

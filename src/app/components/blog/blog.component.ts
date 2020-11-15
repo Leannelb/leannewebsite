@@ -12,7 +12,7 @@ type NewType = ActivatedRoute;
 })
 export class BlogComponent implements OnInit {
  
-  course: Entry<any>;
+  blog: Entry<any>;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,17 +21,17 @@ export class BlogComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    const courseId = this.route.snapshot.paramMap.get('id');
-    this.contentfulService.getCourse(courseId)
-      .then((course) => {
-        this.course = course;
-        console.log(this.course,'>>>>>>>>this.course');
+    const blogId = this.route.snapshot.paramMap.get('id');
+    this.contentfulService.getBlog(blogId)
+      .then((blog) => {
+        this.blog = blog;
+        console.log(this.blog,'>>>>>>>>this.blog');
         
       });
   }
 
   goToList() {
-    this.router.navigate(['/courses']);
+    this.router.navigate(['/blogs']);
   }
 
 }
