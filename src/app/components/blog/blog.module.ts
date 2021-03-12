@@ -16,7 +16,7 @@ import { RouterModule, Routes } from '@angular/router';
     CommonModule,
     SharedModule,
   ],
-  exports:[DashboardComponent, PostComponent
+  exports: [DashboardComponent, PostComponent
 ],
   declarations: [DashboardComponent, PostComponent]
 })

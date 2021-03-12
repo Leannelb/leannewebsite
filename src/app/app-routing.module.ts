@@ -6,10 +6,12 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ListComponent } from './components/blog/list/list.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BarChartComponent } from './components/chart/bar-chart.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'blogs', component: ListComponent},
+  { path: 'charts', component: BarChartComponent},
   { path: 'blog/:id', component: BlogComponent },
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: 'products',  component: ListComponent },
