@@ -2,7 +2,10 @@ import { Component, ElementRef, OnInit, ViewChild, } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import * as CanvasJS from '../../../assets/canvasjs.min';
 import {Chart} from 'chart.js';
-
+import { NgxCsvParser } from 'ngx-csv-parser';
+import { NgxCSVParserError } from 'ngx-csv-parser';
+import { NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-bar-chart',
@@ -10,13 +13,25 @@ import {Chart} from 'chart.js';
   styleUrls: ['./bar-chart.component.css']
 })
 
+
 export class BarChartComponent implements OnInit {
 
+    csvRecords: any[] = [];
+    header = false;
     public lineChart = [];
     public year = [];
     csvForm: FormGroup;
 
+  constructor(private ngxCsvParser: NgxCsvParser, private http: HttpClient) {
+  }
+
+  @ViewChild('fileImportInput', { static: false }) fileImportInput: any;
+  @ViewChild('csvForm') grantAccessForm: NgForm;
+
+
     ngOnInit() {
+        this.getFiles();
+        
         const dataPoints = [
             { y: 71 },
             { y: 55 },
@@ -41,6 +56,41 @@ export class BarChartComponent implements OnInit {
         });
         chart.render();
     }
+
+    getFiles(){
+    this.http.get('assets/jan-mar-timetable.csv', {responseType: 'text'})
+    .subscribe(
+        data => {
+            console.log(data);
+        },
+        error => {
+            console.log(error);
+        }
+    );
+    }
+
+      // Your applications input change listener for the CSV File
+  fileChangeListener($event: any): void {
+
+    // Select the files from the event
+    const files = $event.srcElement.files;
+
+    // Parse the file you want to select for the operation along with the configuration
+    this.ngxCsvParser.parse(files[0], { header: this.header, delimiter: ',' })
+      // tslint:disable-next-line: deprecation
+      .pipe().subscribe((result: Array<any>) => {
+
+        console.log('Result', result);
+        this.csvRecords = result;
+      }, (error: NgxCSVParserError) => {
+        console.log('Error', error);
+      });
+
+  }
+  onSubmit(form) {
+    console.log(form.value);
+  }
+
     lineChat() {
         // for lebels all year removing dupliate
         const uniqueYear = this.year.filter((elem, index, self) => {
