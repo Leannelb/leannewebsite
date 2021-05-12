@@ -48,7 +48,7 @@
     "marked": "^2.0.1",
     "ngx-csv-parser": "0.0.7",
     "ngx-popper": "^5.1.7",
-    "nodemailer": "^5.1.1",
+    "nodemailer": "^6.4.16",
     "popper": "^1.0.1",
     "popper.js": "^1.14.6",
     "rxjs": "6.6.3",
