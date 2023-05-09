@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'blog/:id', component: BlogComponent },
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: 'products',  component: ListComponent },
-  { path: 'blog', loadChildren: './components/blog/blog.module#BlogModule'},
+  { path: 'blog', loadChildren: () => import('./components/blog/blog.module').then(m => m.BlogModule)},
   { path: 'books', component: BooksComponent },
   { path: 'contact', component: ContactComponent }, 
 ];

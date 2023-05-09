@@ -27,7 +27,14 @@
               "src/assets/styles/reset.css",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "aot": false,
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -39,7 +46,6 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "aot": true,
@@ -47,7 +53,8 @@
               "vendorChunk": false,
               "buildOptimizer": true
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -101,8 +108,11 @@
           "options": {
             "outputPath": "dist/leannewebsite-server",
             "main": "src/main.server.ts",
-            "tsConfig": "src/tsconfig.server.json"
-          }
+            "tsConfig": "src/tsconfig.server.json",
+            "sourceMap": true,
+            "optimization": false
+          },
+          "defaultConfiguration": ""
         }
       }
     },
