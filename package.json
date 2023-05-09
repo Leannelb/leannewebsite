@@ -63,7 +63,7 @@
     "@angular/cli": "^11.2.4",
     "@angular/compiler-cli": "^11.0.0",
     "@angular/language-service": "^11.0.0",
-    "@schematics/angular": "^9.0.6",
+    "@schematics/angular": "^9.1.15",
     "@types/jasmine": "^2.8.9",
     "@types/jasminewd2": "^2.0.5",
     "@types/node": "~8.9.4",
@@ -72,7 +72,7 @@
     "protractor": "^7.0.0",
     "ts-node": "~5.0.1",
     "tslint": "^6.1.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.5"
   },
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.",
   "main": "index.js",
