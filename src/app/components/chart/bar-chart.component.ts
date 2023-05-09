@@ -31,95 +31,95 @@ export class BarChartComponent implements OnInit {
 
 
     ngOnInit() {
-        this.getFiles();
+        // this.getFiles();
 
-        const dataPoints = [
-            { y: 71 },
-            { y: 55 },
-            { y: 50 },
-            { y: 65 },
-            { y: 95 },
-            { y: 68 },
-            { y: 28 },
-            { y: 34 },
-            { y: 14 }
-        ];
+        // const dataPoints = [
+        //     { y: 71 },
+        //     { y: 55 },
+        //     { y: 50 },
+        //     { y: 65 },
+        //     { y: 95 },
+        //     { y: 68 },
+        //     { y: 28 },
+        //     { y: 34 },
+        //     { y: 14 }
+        // ];
 
-        const chart = new CanvasJS.Chart('chartContainer', {
-            animationEnabled: true,
-            title: {
-                text: 'Basic Column Chart in Angular 6'
-            },
-            data: [{
-                type: 'column',
-                dataPoints : dataPoints
-            }]
-        });
-        chart.render();
+        // const chart = new CanvasJS.Chart('chartContainer', {
+        //     animationEnabled: true,
+        //     title: {
+        //         text: 'Basic Column Chart in Angular 6'
+        //     },
+        //     data: [{
+        //         type: 'column',
+        //         dataPoints : dataPoints
+        //     }]
+        // });
+        // chart.render();
     }
 
-    getFiles() {
-        this.http.get('assets/jan-mar-timetable.csv', {responseType: 'text'})
-        // tslint:disable-next-line: deprecation
-        .subscribe(
-            data => {
-                this.extractData(data)
-             //   console.log(data);
-            },
-            error => {
-                console.log(error);
-            }
-        );
-    }
-
-    private extractData(data: Response) {
-        let csvData = data;
-        console.log('csvData.length', csvData.length);
-        while(csvData.length < 12){
-
-
-        }
-        const csvDataArr = csvData.split(',');
-
-        let size = 11; 
-        let arrayOfArrays = [];
-        for (let i=0; i<csvDataArr.length; i+=size) {
-            arrayOfArrays.push(csvDataArr.slice(i,i+size));
-        }
-        console.log(arrayOfArrays);
-
-    //    // console.log('res typeof ', typeof(data));
-    //     csvDataArr.forEach(element => {
-    //      //   console.log('element ', element);
-    //     });
-    //     console.log({csvDataArr});
-
-    //     const csvData = res['_body'] || '';
-    //     const allTextLines = csvData.split(/\r\n|\n/);
-    //     const headers = allTextLines[0].split(',');
-    //     const lines = [];
-
-    //     for ( let i = 0; i < allTextLines.length; i++) {
-    //         // split content based on comma
-    //         const data = allTextLines[i].split(',');
-    //         if (data.length === headers.length) {
-    //             const tarr = [];
-    //             for ( let j = 0; j < headers.length; j++) {
-    //                 tarr.push(data[j]);
-    //             }
-    //             lines.push(tarr);
+    // getFiles() {
+    //     this.http.get('assets/jan-mar-timetable.csv', {responseType: 'text'})
+    //     // tslint:disable-next-line: deprecation
+    //     .subscribe(
+    //         data => {
+    //             this.extractData(data)
+    //          //   console.log(data);
+    //         },
+    //         error => {
+    //             console.log(error);
     //         }
+    //     );
+    // }
+
+    // private extractData(data: Response) {
+    //     let csvData = data;
+    //     console.log('csvData.length', csvData.length);
+    //     while(csvData.length < 12){
+
+
     //     }
-    //     this.csvData = lines;
+    //     const csvDataArr = csvData.split(',');
+
+    //     let size = 11; 
+    //     let arrayOfArrays = [];
+    //     for (let i=0; i<csvDataArr.length; i+=size) {
+    //         arrayOfArrays.push(csvDataArr.slice(i,i+size));
+    //     }
+    //     console.log(arrayOfArrays);
+
+    // //    // console.log('res typeof ', typeof(data));
+    // //     csvDataArr.forEach(element => {
+    // //      //   console.log('element ', element);
+    // //     });
+    // //     console.log({csvDataArr});
+
+    // //     const csvData = res['_body'] || '';
+    // //     const allTextLines = csvData.split(/\r\n|\n/);
+    // //     const headers = allTextLines[0].split(',');
+    // //     const lines = [];
+
+    // //     for ( let i = 0; i < allTextLines.length; i++) {
+    // //         // split content based on comma
+    // //         const data = allTextLines[i].split(',');
+    // //         if (data.length === headers.length) {
+    // //             const tarr = [];
+    // //             for ( let j = 0; j < headers.length; j++) {
+    // //                 tarr.push(data[j]);
+    // //             }
+    // //             lines.push(tarr);
+    // //         }
+    // //     }
+    // //     this.csvData = lines;
+    // //   }
+    // //   private handleError (error: any) {
+    // //     // In a real world app, we might use a remote logging infrastructure
+    // //     // We'd also dig deeper into the error to get a better message
+    // //     const errMsg = (error.message) ? error.message :
+    // //       error.status ? `${error.status} - ${error.statusText}` : 'Server error';
+    // //     console.error(errMsg); // log to console instead
+    // //     return errMsg;
     //   }
-    //   private handleError (error: any) {
-    //     // In a real world app, we might use a remote logging infrastructure
-    //     // We'd also dig deeper into the error to get a better message
-    //     const errMsg = (error.message) ? error.message :
-    //       error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-    //     console.error(errMsg); // log to console instead
-    //     return errMsg;
-      }
     // getDataRecordsArrayFromCSVFile(csvRecordsArray: any, headerLength: any) {
     //     let csvArr = [];
 
