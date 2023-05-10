@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild, } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import * as CanvasJS from '../../../assets/canvasjs.min';
 import {Chart} from 'chart.js';
 import { NgxCsvParser } from 'ngx-csv-parser';
@@ -20,7 +20,7 @@ export class BarChartComponent implements OnInit {
     header = true;
     public lineChart = [];
     public year = [];
-    csvForm: FormGroup;
+    csvForm: UntypedFormGroup;
     csvData: any[];
 
   constructor(private ngxCsvParser: NgxCsvParser, private http: HttpClient) {

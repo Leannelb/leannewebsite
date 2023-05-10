@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { UntypedFormControl, Validators } from '@angular/forms';
 import { Material } from '../../app-material'
 import { HttpService } from "../../shared/http.service";
 
@@ -26,12 +26,12 @@ export class ContactComponent implements OnInit {
     console.log(this.http.test);
   }
 
-  emailformControl = new FormControl('',[
+  emailformControl = new UntypedFormControl('',[
     Validators.required,
     Validators.email,
   ])
 
-  nameFormControl = new FormControl('',[
+  nameFormControl = new UntypedFormControl('',[
     Validators.required,
     Validators.minLength(3)
   ])
